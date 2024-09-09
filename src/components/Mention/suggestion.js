@@ -6,6 +6,20 @@ import { RefAttributes } from 'react'
 
 export default {
   items: ({ query }) => {
+    // async function getUsers(){
+
+      //   let usersArray
+      //   = [];
+      //   const response = await fetch("https://jsonplaceholder.org/users");
+     
+      //  const json = await response.json();
+
+      //  for(let i = 0; i < json.length; i++){
+      //     usersArray.push(json[i].firstName + json[i].lastName)
+      //  }
+  
+      //  return usersArray;
+      // },
     return [
       'Mikhail',
       'Alexey',
