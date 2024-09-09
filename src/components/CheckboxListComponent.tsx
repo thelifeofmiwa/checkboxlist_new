@@ -21,8 +21,8 @@ export default () => {
     ],
     content: `
         <ul data-type="taskList">
-          <li data-type="taskItem" data-checked="true">A list item</li>
-          <li data-type="taskItem" data-checked="false">And another one</li>
+          <li data-type="taskItem" data-checked="false">Здесь можно сделать чекбоксы</li>
+          <li data-type="taskItem" data-checked="false">И здесь тоже</li>
         </ul>
       `,
   })
@@ -30,6 +30,7 @@ export default () => {
   if (!editor) {
     return null
   }
+  console.log(editor.getHTML());
 
   return (
     <>
@@ -39,7 +40,7 @@ export default () => {
             onClick={() => editor.chain().focus().toggleTaskList().run()}
             className={editor.isActive('taskList') ? 'is-active' : ''}
           >
-            Toggle task list
+            Toggle checkbox list
           </button>
           <button
             onClick={() => editor.chain().focus().splitListItem('taskItem').run()}
@@ -61,8 +62,7 @@ export default () => {
           </button>
         </div>
       </div>
-
-      <EditorContent editor={editor} />
+      <EditorContent editor={editor} / >
     </>
   )
 }

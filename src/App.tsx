@@ -1,10 +1,12 @@
 import React from 'react';
-import Tiptap from './components/Tiptap';
+import CheckboxListComponent from './components/CheckboxListComponent';
+import MentionComponent from './components/Mention/MentionComponent';
 
 function App() {
   return (
     <div className="App">
-      <Tiptap />
+      <CheckboxListComponent />
+      <MentionComponent />
     </div>
   );
 }
