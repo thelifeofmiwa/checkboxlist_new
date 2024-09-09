@@ -2,6 +2,7 @@ import React, {
     forwardRef, useEffect, useImperativeHandle,
     useState,
   } from 'react'
+  import './Mentionlist.css'
   
   export default forwardRef((props, ref) => {
     const [selectedIndex, setSelectedIndex] = useState(0)

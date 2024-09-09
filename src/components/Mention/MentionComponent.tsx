@@ -4,6 +4,7 @@ import Paragraph from '@tiptap/extension-paragraph'
 import Text from '@tiptap/extension-text'
 import { EditorContent, mergeAttributes, useEditor } from '@tiptap/react'
 import React from 'react'
+import './styles.css'
 
 import suggestion from './suggestion.js'
 
